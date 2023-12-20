@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SynthSphere</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="new_registration">New Registration</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_have_an_account">Don\'t Have an Account?</string>
+    <string name="search">Search</string>
+    <string name="what_would_you_like_to_listen">What would you like to listen?</string>
+    <string name="tag_line">Collaborate Create Conquer</string>
+    <string name="new_music">New Music</string>
+    <string name="music_for_you">Music for you</string>
+    <string name="dummy_name">Sher Singh</string>
+    <string name="profile_tag_line">Global Content Creator</string>
+    <string name="my_albums">My Albums</string>
+    <string name="view_all">view all</string>
+    <string name="my_connections">My Connections</string>
+
+</resources>

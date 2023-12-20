@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                android:fontFamily="@font/rubikDoodleShadowRegular"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="128dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:hint="@string/username"
+                android:fontFamily="@font/muktaSemiBold"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/btn_background"/>
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:hint="@string/password"
+                android:fontFamily="@font/muktaSemiBold"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:fontFamily="@font/muktaBold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/log_in"
+                android:fontFamily="@font/muktaBold"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muktaRegular"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:fontFamily="@font/muktaBold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtAppName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                android:text="@string/app_name"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="40sp" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/edtlEmail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/txtAppName"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:hint="@string/phone_number"-->
+<!--                android:textColorHint="@color/colorContrast"-->
+<!--                app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                app:boxCornerRadiusBottomStart="20dp"-->
+<!--                app:boxCornerRadiusTopEnd="20dp"-->
+<!--                app:boxCornerRadiusTopStart="20dp"-->
+<!--                app:boxStrokeColor="@color/colorSecondary"-->
+<!--                app:boxStrokeErrorColor="@color/colorError"-->
+<!--                app:boxStrokeWidth="3dp"-->
+<!--                app:errorContentDescription="Error"-->
+<!--                app:errorEnabled="true"-->
+<!--                app:errorIconDrawable="@drawable/error"-->
+<!--                app:errorIconTint="@color/colorError"-->
+<!--                app:errorTextColor="@color/colorError"-->
+<!--                app:hintTextColor="@color/colorContrast"-->
+<!--                app:startIconContentDescription="email"-->
+<!--                app:startIconDrawable="@drawable/email"-->
+<!--                app:startIconTint="@color/colorSecondary">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/edtEmail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/colorContrast"-->
+<!--                    android:textSize="18sp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/edtlPassword"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/edtlEmail"-->
+<!--                android:layout_marginHorizontal="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:hint="@string/password"-->
+<!--                android:textColorHint="@color/colorContrast"-->
+<!--                app:boxCornerRadiusBottomEnd="20dp"-->
+<!--                app:boxCornerRadiusBottomStart="20dp"-->
+<!--                app:boxCornerRadiusTopEnd="20dp"-->
+<!--                app:boxCornerRadiusTopStart="20dp"-->
+<!--                app:boxStrokeColor="@color/colorSecondary"-->
+<!--                app:boxStrokeErrorColor="@color/colorError"-->
+<!--                app:boxStrokeWidth="3dp"-->
+<!--                app:endIconMode="password_toggle"-->
+<!--                app:endIconTint="@color/colorSecondary"-->
+<!--                app:errorContentDescription="Error"-->
+<!--                app:errorEnabled="true"-->
+<!--                app:errorIconDrawable="@drawable/error"-->
+<!--                app:errorIconTint="@color/colorError"-->
+<!--                app:errorTextColor="@color/colorError"-->
+<!--                app:hintTextColor="@color/colorContrast"-->
+<!--                app:startIconContentDescription="mobile number"-->
+<!--                app:startIconDrawable="@drawable/password"-->
+<!--                app:startIconTint="@color/colorSecondary">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/edtPassword"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:maxLength="20"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/colorContrast"-->
+<!--                    android:textSize="18sp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btnLogin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/edtlPassword"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                android:letterSpacing="0.2"-->
+<!--                android:text="@string/login"-->
+<!--                android:textColor="@color/colorContrast"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:strokeColor="@color/colorSecondary"-->
+<!--                app:strokeWidth="3dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnForgot"-->
+<!--                style="@style/Widget.Material3.Button.TextButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/btnLogin"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                android:letterSpacing="0.1"-->
+<!--                android:text="@string/forgot_password"-->
+<!--                android:textColor="@color/colorContrast"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnNewRegistration"-->
+<!--                style="@style/Widget.Material3.Button.TextButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/btnForgot"-->
+<!--                android:fontFamily="@font/rubikDoodleShadowRegular"-->
+<!--                android:letterSpacing="0.1"-->
+<!--                android:text="@string/new_registration"-->
+<!--                android:textColor="@color/colorContrast"-->
+<!--                android:textSize="18sp" />-->
+<!--        </RelativeLayout>-->
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
