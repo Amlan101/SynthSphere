@@ -165,7 +165,7 @@
                     android:layout_weight="0.2"
                     android:src="@tools:sample/avatars"
                     android:layout_gravity="center_vertical"
-                    app:srcCompat="@drawable/btn_1"
+                    app:srcCompat="@drawable/home_alt_icon_48"
                     app:tint="@color/white" />
 
                 <ImageView
