@@ -18,16 +18,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var layoutManager: RecyclerView.LayoutManager
 
     private val trackList = arrayListOf(
-        Track(1,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(2,"Kina Chir", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(3,"Chaleya", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(4,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(5,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(6,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(7,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(8,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(9,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
-        Track(10,"Heeriye", "Arijit Singh", "3:59", R.drawable.lion_profile ),
+        Track(1,"Chaleya", "Anirudh", "3:59", R.drawable.chaleya_cover ),
+        Track(2,"Rangisari", "Kanishk Seth", "3:59", R.drawable.rangisari_cover ),
+        Track(3,"Janiye", "Vishal Mishra", "3:59", R.drawable.janiye_cover ),
+        Track(4,"One Love", "Shubh", "3:59", R.drawable.one_love_cover ),
+        Track(5,"What Jhumka?", " Pritam", "3:59", R.drawable.what_jhumka_cover ),
+        Track(6,"Tere Vaaste", " Varun Jain", "3:59", R.drawable.tere_vaaste_cover ),
+        Track(7,"Satarang", "Arijit Singh", "3:59", R.drawable.satranga_cover ),
+        Track(8,"Malang Sajna", "Sachet Tandon", "3:59", R.drawable.maalang_sajna_cover ),
+        Track(9,"Kina Chir ", "PropheC", "3:59", R.drawable.kina_chir_cover ),
+        Track(10,"Gul ", "Anuv Jain", "3:59", R.drawable.gul_cover ),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +42,15 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView1.adapter = view1Adapter
         recyclerView2.adapter = view2Adapter
+
+        // Setting the layout manager for RecyclerViews
+        val layoutManager1 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView1.layoutManager = layoutManager1
+
+        val layoutManager2 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView2.layoutManager = layoutManager2
+
+
 
         // This piece of code is used to add divider lines between the list items
 //        recyclerView1.addItemDecoration(

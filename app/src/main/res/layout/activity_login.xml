@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in"
-                android:fontFamily="@font/rubikDoodleShadowRegular"
+                android:fontFamily="@font/rubik_doodle_shadow_regular"
                 android:textColor="@color/white"
                 android:textSize="50sp"
                 android:layout_marginStart="32dp"
@@ -46,7 +46,7 @@
                 android:inputType="text"
                 android:textAlignment="center"
                 android:hint="@string/username"
-                android:fontFamily="@font/muktaSemiBold"
+                android:fontFamily="@font/mukta_semi_bold"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:background="@drawable/btn_background"/>
@@ -62,7 +62,7 @@
                 android:inputType="textPassword"
                 android:textAlignment="center"
                 android:hint="@string/password"
-                android:fontFamily="@font/muktaSemiBold"
+                android:fontFamily="@font/mukta_semi_bold"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:background="@drawable/btn_background"/>
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/forgot_password"
-                android:fontFamily="@font/muktaBold"
+                android:fontFamily="@font/mukta_bold"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="16sp"/>
@@ -87,7 +87,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/btn_background"
                 android:text="@string/log_in"
-                android:fontFamily="@font/muktaBold"
+                android:fontFamily="@font/mukta_bold"
                 android:textColor="@color/white"
                 android:textSize="22sp" />
 
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/don_t_have_an_account"
                 android:textColor="@color/white"
-                android:fontFamily="@font/muktaRegular"
+                android:fontFamily="@font/mukta_regular"
                 android:layout_marginTop="32dp"
                 android:textAlignment="center"
                 android:textSize="16sp"/>
@@ -107,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_up"
-                android:fontFamily="@font/muktaBold"
+                android:fontFamily="@font/mukta_bold"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="16sp"/>

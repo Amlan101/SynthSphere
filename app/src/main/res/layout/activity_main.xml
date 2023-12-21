@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".activity.MainActivity">
 
     <ScrollView
@@ -58,7 +60,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="12dp"
-                android:fontFamily="@font/muktaBold"
+                android:fontFamily="@font/mukta_bold"
                 android:text="@string/new_music"
                 android:textColor="#ffc107"
                 android:textSize="20sp" />
@@ -80,17 +82,17 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ProgressBar
-                    android:id="@+id/loading1"
-                    style="?android:attr/progressBarStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="@+id/view1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:visibility="visible" />
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/loading1"-->
+<!--                    style="?android:attr/progressBarStyle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/view1"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    tools:visibility="visible" />-->
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
@@ -101,7 +103,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="12dp"
-                android:fontFamily="@font/muktaBold"
+                android:fontFamily="@font/mukta_bold"
                 android:text="@string/music_for_you"
                 android:textColor="#ffc107"
                 android:textSize="20sp" />
@@ -123,17 +125,17 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ProgressBar
-                    android:id="@+id/loading2"
-                    style="?android:attr/progressBarStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    app:layout_constraintBottom_toBottomOf="@+id/view2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/view2"
-                    tools:visibility="visible" />
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/loading2"-->
+<!--                    style="?android:attr/progressBarStyle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/view2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/view2"-->
+<!--                    tools:visibility="visible" />-->
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
@@ -163,7 +165,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
-                    android:src="@tools:sample/avatars"
                     android:layout_gravity="center_vertical"
                     app:srcCompat="@drawable/home_alt_icon_48"
                     app:tint="@color/white" />
@@ -175,8 +176,7 @@
                     android:layout_margin="5dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="0.2"
-                    android:src="@tools:sample/avatars"
-                    app:srcCompat="@drawable/btn_2"
+                    app:srcCompat="@drawable/favourite_icon"
                     app:tint="@color/white" />
 
                 <ImageView
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:layout_gravity="center_vertical"
-                    android:src="@tools:sample/avatars"
+                    android:src="@drawable/user_icon_large"
                     android:visibility="invisible"
                     app:tint="@color/white" />
 
@@ -196,8 +196,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     android:layout_gravity="center_vertical"
-                    android:src="@tools:sample/avatars"
-                    app:srcCompat="@drawable/btn_3"
+                    app:srcCompat="@drawable/mentor_icon_large"
                     app:tint="@color/white" />
 
                 <ImageView
@@ -207,8 +206,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="0.2"
                     android:layout_gravity="center_vertical"
-                    android:src="@tools:sample/avatars"
-                    app:srcCompat="@drawable/btn_4"
+                    app:srcCompat="@drawable/user_icon_large"
                     app:tint="@color/white" />
             </LinearLayout>
 
